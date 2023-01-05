@@ -8,5 +8,5 @@ RUN apt-get update \
     && cd .. \
     && rm -fr lcov \
     && apt-get purge -y git make \
-    && apt-get autoremove \
+    && apt-get autoremove -y \
     && rm -fr /var/lib/apt/lists/*
